@@ -76,7 +76,7 @@ body {
 
 .footer {
     grid-area: footer;
-    background: white;
+    background: orange;
     height: auto;
 }
 
