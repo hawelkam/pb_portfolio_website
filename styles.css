@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #FCFBFF;
+    padding: 0;
+    margin: 0;
+}
+.content {
+    grid-area: content;
+}
+.topbar {
+    grid-area: topbar;
+	width: 100vw;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+	align-items: center;
+	justify-content: space-around;
+    flex-wrap: wrap;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    position: fixed;
+}
+
+.attributes-content {
+    grid-area: topbar;
+	width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+	align-items: center;
+	justify-content: space-around;
+    flex-wrap: wrap;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 7px 10px #00000017;
+    border-radius: 13px;
+    opacity: 1;
+    flex: 1;
+    
+}
+
+.attributes-content ul {
+    margin: 0;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+    color: black;
+}
+
+.attributes-content h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.attributes-content p {
+    font-size: small;
+    font-weight: normal;
+    line-height: 19px;
+}
+
+.attributes-content div {
+    padding: 1em;
+}
+
+.main-nav ul {
+	text-align: center;
+}
+.main-nav li {
+	display: inline;
+}
+.main-nav a {
+	display: inline-block;
+	padding: .5em 1.5em;
+}
+
+.footer {
+    grid-area: footer;
+    background: white;
+    height: auto;
+}
+
+.content,
+.footer {
+    padding: 1em;
+}
+.container {
+    font-size: 1.5em;
+    display: grid;
+    grid-template-areas: 
+        "topbar"
+        "content"
+        "footer";
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr 250px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav li {
+    list-style: none;
+}
+
+.navlink {
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: small;
+    transition: 0.5s;
+}
+
+.navlink:hover {
+    font-weight: 600;
+}
+
+a {
+    padding: 1em;
+}
+
+.contact-btn {
+    border: 2px solid #17BEBB;
+    border-radius: 21px;
+    font-weight: 700;
+}
+
+.contact-btn:hover {
+    background: #17BEBB;
+    color: white;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: large;
+    color: black;
+    text-decoration: none;
+}
+
+.case-1 {
+    padding: 1em;
+}
+
+.hero h1 {
+    font-weight: bold;
+    font-size: medium;
+    color: #17BEBB;
+}
+
+.hero {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 2em;
+}
+
+.hero a {
+    padding: .75em 2em;
+}
+
+.hero img {
+    float: right;
+}
+
+.hero p {
+    font-size: small;
+    font-weight: normal;
+    line-height: 19px;
+}
+
+.action-btn {
+    border: 2px solid #17BEBB;
+    border-radius: 21px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: small;
+    padding: 1em;
+    transition: 0.5s;
+}
+
+.action-btn:hover {
+    background: #17BEBB;
+    color: white;
+}
+
