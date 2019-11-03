@@ -190,3 +190,21 @@ a {
     color: white;
 }
 
+.hero-img {
+    width: 400px;
+}
+
+.parent {
+    position: relative;
+}
+
+.over-img {
+    position: absolute;
+    top: 80%;
+    right: 0%;
+}
+
+.over-img:hover {
+    cursor: pointer;
+}
+
