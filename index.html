@@ -4,6 +4,19 @@
     <title>Piotr Bilik</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="stylesheet" href="normalize.css" type="text/css">
+    <script language="javascript">
+            function changeImage() {
+        
+                if (document.getElementById("changeableImage").src == "file:///H:/pb_portfolio_website/Images/Group10.png") 
+                {
+                    document.getElementById("changeableImage").src = "file:///H:/pb_portfolio_website/Images/WideMe.png";
+                }
+                else 
+                {
+                    document.getElementById("changeableImage").src = "file:///H:/pb_portfolio_website/Images/Group10.png";
+                }
+            }
+        </script>
 </head>
 <body>
     <div class="container">
@@ -22,7 +35,10 @@
         <div class="content">
             <section class="hero">
                 <div class="hero-content">
-                    <img src="piotr-cartoon.jpg" />
+                    <div class="parent">
+                        <img class="hero-img" src="Images/Group80.png" />
+                        <img class="hero-img over-img" src="Images/Group10.png" id="changeableImage" onclick="changeImage()"/>
+                    </div>
                     <h1>HI, I'M PIOTR BILIK</h1>
                     <h2>JUNIOR UX/UI DESIGNER</h2>
                     <p>A self taught designer that is looking for opportunity for further develop. <br />
