@@ -2,8 +2,11 @@
 <html>
 <head>
     <title>Piotr Bilik</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css" type="text/css">
-    <link rel="stylesheet" href="normalize.css" type="text/css">
+
     <script language="javascript">
             function changeImage() {
         
@@ -35,18 +38,21 @@
         <div class="content">
             <section class="hero">
                 <div class="hero-content">
-                    <div class="parent">
-                        <img class="hero-img" src="Images/Group80.png" />
-                        <img class="hero-img over-img" src="Images/Group10.png" id="changeableImage" onclick="changeImage()"/>
+                    <div class="image">
+                        <div class="parent">
+                            <img class="hero-img" src="Images/Group80.png" />
+                            <img class="hero-img over-img" src="Images/Group10.png" id="changeableImage" onclick="changeImage()"/>
+                        </div>
                     </div>
-                    <h1>HI, I'M PIOTR BILIK</h1>
-                    <h2>JUNIOR UX/UI DESIGNER</h2>
-                    <p>A self taught designer that is looking for opportunity for further develop. <br />
-                    I love learning new stuff and using my knowledge for a good cause. <br />
-                    Team player, goal-oriented and fun guy who want's to join your team!</p>
-                    <a class="action-btn" href="#">DOWNLOAD RESUME</a>
+                    <div class="text">
+                        <h1>HI, I'M PIOTR BILIK</h1>
+                        <h2>JUNIOR UX/UI DESIGNER</h2>
+                        <p>A self taught designer that is looking for opportunity for further develop. <br />
+                        I love learning new stuff and using my knowledge for a good cause. <br />
+                        Team player, goal-oriented and fun guy who want's to join your team!</p>
+                        <a class="action-btn" href="#">DOWNLOAD RESUME</a>
+                    </div>
                 </div>
-                
             </section>
             <section class="attributes">
                 <div class="attributes-content">
@@ -86,6 +92,8 @@
                         <img src="Images/gzw-img.png" />
                     </div>
                     <div class="text">
+                        <br />
+                        <br />
                         <h1>01</h1>
                         <h2>GDZIE ZJEŚĆ WEGE - WEB APP</h2>
                         <p>Local vegan and vegetarian restaurant finder. <br />Easy way to find a place that matches your <br />expectations in a matter of few clicks!</p>
@@ -93,27 +101,79 @@
                     </div>
                 </div>
             </section>
-            <section class="case-2">
-                <div class="case-2-content">
-                    CASE 2
+            <section class="ui-designs">
+                <div class="ui-designs-content">
+                    <div class="image">
+                            <img src="Images/mockup.png" />
+                        </div>
+                        <div class="text">
+                            <br />
+                            <br />
+                            <br />
+                            <h1>02</h1>
+                            <h2>UI Designs</h2>
+                            <p>Some UI Designs of Mobile and Web Apps I've made</p>
+                            <a>VIEW DESIGNS</a>
+                        </div>
                 </div>
             </section>
             <section id="testimonials" class="testimonials">
                 <div class="testimonials-content">
-                    TESTIMONIALS
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                                </ol>
+                              
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                  <div class="item active">
+                                    OPINIA 1<br />TEXT
+                                  </div>
+                              
+                                  <div class="item">
+                                    OPINIA 2<br />TEXT
+                                  </div>
+                              
+                                  <div class="item">
+                                    OPINIA 3<br />TEXT
+                                  </div>
+                                </div>
+                              
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                  <span class="glyphicon glyphicon-chevron-left"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                  <span class="glyphicon glyphicon-chevron-right"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                              </div>
                 </div>
             </section>
 
         </div>
         <div class="footer">
             <footer id="contact">
-                <h1>Contact Me</h1>
-                <ul>
-                    <li>+48 508 346 718</li>
-                    <li>piotr.k.bilik@gmail.com</li>
-                    <li>CV: English / Polish</li>
-                </ul>
-                <img src="cartoon.jpg" />
+                <div class="hero-summary">
+                    <h1>Piotr Bilik</h1>
+                    <p>
+                    A self taught designer that is looking for opportunity for further develop. I love learning new stuff and using my knowledge for a good cause. Team player, goal-oriented and fun guy who want's to join your team!
+                    </p>
+                </div>
+                <div class="contact">
+                    <h1>Contact Me</h1>
+                    <p><a>+48 508 346 718</a></p>
+                    <p><a>piotr.k.bilik@gmail.com</a></p>
+                    <p><a>CV: English / Polish</a></p>
+                </div>
+                <div class="image">
+                    <img src="Images/footer-img.png" />
+                </div>
+                
             </footer>
         </div>
     </div>
