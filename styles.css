@@ -124,6 +124,8 @@ nav li {
 
 .navlink:hover {
     font-weight: 600;
+    text-decoration: none;
+    color: black;
 }
 
 a {
@@ -144,6 +146,11 @@ a {
 .logo {
     font-weight: 900;
     font-size: large;
+    color: black;
+    text-decoration: none;
+}
+
+.logo:hover {
     color: black;
     text-decoration: none;
 }
@@ -320,15 +327,19 @@ footer {
 
 footer .image > img {
     flex: 3 0 0%;
-    width: 200px;
+    width: 300px;
     padding-top: 2em;
+    padding-right: 100px;
 }
 
 footer > .hero-summary {
-    flex: 1 0 0%;
+    flex: 1 0 50%;
+    padding-right: 20%;
+    padding-left: 4em;
 }
 
-footer .hero-summary p {
+footer .hero-summary p,
+footer .contact p {
     font-size: small;
 }
 
@@ -339,5 +350,18 @@ footer > .contact {
 footer h1 {
     font-weight: bold;
     font-size: medium;
+}
+
+.contact a {
+    font-size: small;
+    padding: 0px;
+    border-bottom: 2px solid #17BEBB;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.contact a:hover {
+    color: #17BEBB;
 }
 
