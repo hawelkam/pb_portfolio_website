@@ -5,6 +5,7 @@ body {
     padding: 0;
     margin: 0;
 }
+
 .content {
     grid-area: content;
 }
@@ -207,23 +208,14 @@ a {
 .action-btn:hover {
     background: #17BEBB;
     color: white;
+    text-decoration: none;
 }
 
 .hero-img {
-    width: 400px;
+    width: 400px !important;
 }
 
-.parent {
-    position: relative;
-}
-
-.over-img {
-    position: absolute;
-    top: 80%;
-    right: 0%;
-}
-
-.over-img:hover {
+.hero-img:hover {
     cursor: pointer;
 }
 
@@ -278,6 +270,14 @@ a {
     padding: 0px;
     font-weight: bold;
     border-bottom: 2px solid #17BEBB;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.gzw a:hover,
+.ui-designs a:hover {
+    color: #17BEBB;
 }
 
 .hero-content {
@@ -335,7 +335,7 @@ footer .image > img {
 footer > .hero-summary {
     flex: 1 0 50%;
     padding-right: 20%;
-    padding-left: 4em;
+    padding-left: 7em;
 }
 
 footer .hero-summary p,
@@ -363,5 +363,15 @@ footer h1 {
 
 .contact a:hover {
     color: #17BEBB;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 20em;
 }
 

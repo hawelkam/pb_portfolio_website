@@ -10,13 +10,13 @@
     <script language="javascript">
             function changeImage() {
         
-                if (document.getElementById("changeableImage").src == "file:///H:/pb_portfolio_website/Images/Group10.png") 
+                if (document.getElementById("changeableImage").src == "file:///H:/pb_portfolio_website/Images/PiotrCartoon.png") 
                 {
-                    document.getElementById("changeableImage").src = "file:///H:/pb_portfolio_website/Images/WideMe.png";
+                    document.getElementById("changeableImage").src = "file:///H:/pb_portfolio_website/Images/PiotrPhoto.png";
                 }
                 else 
                 {
-                    document.getElementById("changeableImage").src = "file:///H:/pb_portfolio_website/Images/Group10.png";
+                    document.getElementById("changeableImage").src = "file:///H:/pb_portfolio_website/Images/PiotrCartoon.png";
                 }
             }
         </script>
@@ -24,11 +24,11 @@
 <body>
     <div class="container">
         <div class="topbar">
-            <a class="logo" href="#">PIOTR BILIK</a>
+            <a class="logo" href="index.html">PIOTR BILIK</a>
             <nav class="main-nav">
                 <ul class="main-nav-list">
-                    <li><a class="navlink" href="#">GDZIE ZJEŚĆ WEGE</a></li>
-                    <li><a class="navlink" href="#">UI DESIGNS</a></li>
+                    <li><a class="navlink" href="#gzw">GDZIE ZJEŚĆ WEGE</a></li>
+                    <li><a class="navlink" href="#ui-designs">UI DESIGNS</a></li>
                     <li><a class="navlink" href="#testimonials">TESTIMONIALS</a></li>
                     <li><a class="contact-btn navlink" href="#contact">CONTACT ME</a></li>
 
@@ -39,10 +39,7 @@
             <section class="hero">
                 <div class="hero-content">
                     <div class="image">
-                        <div class="parent">
-                            <img class="hero-img" src="Images/Group80.png" />
-                            <img class="hero-img over-img" src="Images/Group10.png" id="changeableImage" onclick="changeImage()"/>
-                        </div>
+                        <img class="hero-img" src="Images/PiotrCartoon.png" id="changeableImage" onclick="changeImage()"/>
                     </div>
                     <div class="text">
                         <h1>HI, I'M PIOTR BILIK</h1>
@@ -86,7 +83,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="gzw">
+            <section id="gzw" class="gzw">
                 <div class="gzw-content">
                     <div class="image">
                         <img src="Images/gzw-img.png" />
@@ -97,11 +94,11 @@
                         <h1>01</h1>
                         <h2>GDZIE ZJEŚĆ WEGE - WEB APP</h2>
                         <p>Local vegan and vegetarian restaurant finder. <br />Easy way to find a place that matches your <br />expectations in a matter of few clicks!</p>
-                        <a>VIEW CASESTUDY</a>
+                        <a href="gzw.html">VIEW CASESTUDY</a>
                     </div>
                 </div>
             </section>
-            <section class="ui-designs">
+            <section id="ui-designs" class="ui-designs">
                 <div class="ui-designs-content">
                     <div class="image">
                             <img src="Images/mockup.png" />
@@ -113,7 +110,7 @@
                             <h1>02</h1>
                             <h2>UI Designs</h2>
                             <p>Some UI Designs of Mobile and Web Apps I've made</p>
-                            <a>VIEW DESIGNS</a>
+                            <a href="ui-designs.html">VIEW DESIGNS</a>
                         </div>
                 </div>
             </section>
@@ -175,8 +172,8 @@
                 </div>
                 <div class="contact">
                     <h1>Contact Me</h1>
-                    <p><a>+48 508 346 718</a></p>
-                    <p><a>piotr.k.bilik@gmail.com</a></p>
+                    <p><a href="tel:+48508346718">+48 508 346 718</a></p>
+                    <p><a href="mailto:piotr.k.bilik@gmail.com">piotr.k.bilik@gmail.com</a></p>
                     <p>CV: <a>English</a> / <a>Polish</a></p>
                 </div>
                 <div class="image">
