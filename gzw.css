@@ -185,6 +185,39 @@
 }
 
 .gzw-5 img {
-    width: 60vw;
+    width: 70vw;
+    margin: 0;
+}
+
+.gzw-5 a,
+.gzw-5 h2 {
+    display: inline;
+}
+
+.gzw-5 a {
+    margin-left: 1vw;
+}
+
+.gzw-btn {
+    border: 2px solid black;
+    border-radius: 21px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 10px;
+    padding: 10px 30px 10px 30px;
+    color: black;
+}
+
+.gzw-btn:visited,
+.gzw-btn:active {
+    color: black;
+    text-decoration: none;
+}
+
+.gzw-btn:hover {
+    background: black;
+    color: white;
+    text-decoration: none;
 }
 
