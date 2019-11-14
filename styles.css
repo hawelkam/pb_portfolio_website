@@ -28,7 +28,7 @@ body {
 
 .attributes-content {
     grid-area: topbar;
-	width: 80vw;
+	width: 60vw;
     height: auto;
     margin: 0 auto;
     display: flex;
@@ -379,7 +379,8 @@ footer h1 {
 .testimonials h1 {
     font-size: medium;
     padding-top: 2em;
-    padding-left: 7em;
+    padding-left: 20em;
+    padding-right: 20em;
     font-weight: bold;
 }
 
