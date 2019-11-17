@@ -1,0 +1,36 @@
+﻿.content h1 {
+    font-weight: 900;
+    font-size: 48px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.content img {
+    width: 200px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    height: 50em;
+}
+
+.black {
+    color: black;
+}
+
+.carousel-indicators .black-indicator {
+    background-color: black;
+}
+
+.content img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+}

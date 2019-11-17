@@ -20,6 +20,7 @@ body {
     flex-wrap: wrap;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     position: fixed;
+    z-index: 5;
 }
 
 .attributes {
@@ -332,6 +333,7 @@ footer .footer-image > img {
     width: 290px;
     padding-right: 100px;
     display: block;
+
 }
 
 footer > .hero-summary {
