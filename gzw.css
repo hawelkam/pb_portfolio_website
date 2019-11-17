@@ -119,8 +119,7 @@
 
 .gzw-2-content > .text,
 .gzw-4-content > .text {
-    flex: 1 0 70%;
-    margin-left: 5vw;
+    flex: 1 0 60%;
 }
 
 .gzw-2,
