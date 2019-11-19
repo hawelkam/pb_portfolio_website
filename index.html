@@ -1,119 +1,176 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <title>Piotr Bilik</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="js/main.js"></script>
 
-    <script language="javascript">
-            function changeImage() {
-        
-                if (document.getElementById("changeableImage").src == "http://piotrbilik.com/Images/PiotrCartoon.png") 
-                {
-                    document.getElementById("changeableImage").src = "http://piotrbilik.com/Images/PiotrPhoto.png";
-                }
-                else 
-                {
-                    document.getElementById("changeableImage").src = "http://piotrbilik.com/Images/PiotrCartoon.png";
-                }
-            }
-        </script>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
 </head>
+
 <body>
     <div class="container">
-        <div class="topbar">
-            <a class="logo" href="index.html">PIOTR BILIK</a>
-            <nav class="main-nav">
-                <ul class="main-nav-list">
+        <nav class="navbar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">PIOTR BILIK</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
                     <li><a class="navlink" href="index.html#gzw">GDZIE ZJEŚĆ WEGE</a></li>
                     <li><a class="navlink" href="index.html#ui-designs">UI DESIGNS</a></li>
                     <li><a class="navlink" href="index.html#testimonials">TESTIMONIALS</a></li>
                     <li><a class="contact-btn navlink" href="#contact">CONTACT ME</a></li>
-
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
+
         <div class="content">
             <section class="hero">
                 <div class="hero-content">
-                    <div class="image">
-                        <img class="hero-img" src="Images/PiotrCartoon.png" id="changeableImage" onclick="changeImage()"style="margin-top: 3em;"/>
+
+                    <div class="row">
+
+                        <div class="col-sm-5 col-sm-push-7">
+                            <div class="image">
+                                <div id="cycler">
+                                    <img class="hero-img active" src="Images/PiotrCartoon.png" alt="" />
+                                    <img class="hero-img" src="Images/PiotrPhoto.png" alt="" />		
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-7 col-sm-pull-5">
+                            <div class="text">
+                                <h1>HI, I'M PIOTR BILIK</h1>
+                                <h2>JUNIOR UX/UI DESIGNER</h2>
+                                <p>
+                                    A self taught designer that is looking for opportunity for further develop.
+                                    <br>
+                                    I love learning new stuff and using my knowledge for a good cause.
+                                    <br>
+                                    Team player, goal-oriented and fun guy who want's to join your team!
+                                </p>
+                                <a class="action-btn" href="Files/Piotr Bilik English.pdf" target="_blank"
+                                    rel="noopener">DOWNLOAD RESUME</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="text" style="margin-top: 3em;">
-                        <h1>HI, I'M PIOTR BILIK</h1>
-                        <h2>JUNIOR UX/UI DESIGNER</h2>
-                        <p>A self taught designer that is looking for opportunity for further develop. <br />
-                        I love learning new stuff and using my knowledge for a good cause. <br />
-                        Team player, goal-oriented and fun guy who want's to join your team!</p>
-                        <a class="action-btn" href="Files/Piotr Bilik English.pdf" target="_blank" rel="noopener">DOWNLOAD RESUME</a>
-                    </div>
+
                 </div>
             </section>
+
             <section class="attributes">
                 <div class="attributes-content">
-                    <ul class="main-nav-list">
-                        <li>
-                            <div>
-                                <img src="Images/Teamplayer.png" />
-                                <h1>TEAM PLAYER</h1>
-                                <p>I enjoy working with and for others. <br/> 
-                                    Highly adaptable, reliable <br />
-                                    and experienced team-worker</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <img src="Images/Empathy.png" />
-                                <h1>EMPATHY</h1>
-                                <p>Customer-oriented, attentive <br />
-                                    listener with ability to <br/>
-                                    see multiple perspectives</p>
-                            </div>
-                        </li>
-                        <li>
-                                <div>
-                                    <img src="Images/Goal Oriented.png" />
-                                    <h1>GOAL ORIENTED</h1>
-                                    <p>I'm focused <br />
-                                        to deliver quality & clarity on time</p>
-                                </div>
-                        </li>
-                    </ul>
+                    <div class="row">
+
+                        <div class="col-sm-4 text-center">
+                            <img src="Images/Teamplayer.png">
+                            <h1>TEAM PLAYER</h1>
+                            <p>
+                                I enjoy working with and for others.
+                                <br>
+                                Highly adaptable, reliable
+                                <br>
+                                and experienced team-worker
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4 text-center">
+                            <img src="Images/Empathy.png">
+                            <h1>EMPATHY</h1>
+                            <p>
+                                Customer-oriented, attentive
+                                <br>
+                                listener with ability to
+                                <br>
+                                see multiple perspectives
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4 text-center">
+                            <img src="Images/Goal Oriented.png">
+                            <h1>GOAL ORIENTED</h1>
+                            <p>
+                                I'm focused
+                                <br>
+                                to deliver quality &amp; clarity on time
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
             </section>
+
             <section id="gzw" class="gzw">
                 <div class="gzw-content">
-                    <div class="image">
-                        <img src="Images/gzw-img.png" />
+
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-push-6">
+
+                            <div class="image">
+                                <img src="Images/gzw-img.png" class="img-responsive">
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6 col-sm-pull-6">
+                            <div class="text">
+                                <h1>01</h1>
+                                <h2>GDZIE ZJEŚĆ WEGE - WEB APP</h2>
+                                <p>
+                                    Local vegan and vegetarian restaurant finder.
+                                    <br>
+                                    Easy way to find a place that matches your
+                                    <br>
+                                    expectations in a matter of few clicks!
+                                </p>
+                                <a href="gzw.html">VIEW CASESTUDY</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="text">
-                        <br />
-                        <br />
-                        <h1>01</h1>
-                        <h2>GDZIE ZJEŚĆ WEGE - WEB APP</h2>
-                        <p>Local vegan and vegetarian restaurant finder. <br />Easy way to find a place that matches your <br />expectations in a matter of few clicks!</p>
-                        <a href="gzw.html">VIEW CASESTUDY</a>
-                    </div>
+
                 </div>
             </section>
+
             <section id="ui-designs" class="ui-designs">
                 <div class="ui-designs-content">
-                    <div class="image">
-                            <img src="Images/mockup.png" />
+
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="image">
+                                <img src="Images/mockup.png" class="img-responsive">
+                            </div>
                         </div>
-                        <div class="text">
-                            <br />
-                            <br />
-                            <br />
-                            <h1>02</h1>
-                            <h2>UI Designs</h2>
-                            <p>Some UI Designs of Mobile and Web Apps I've made</p>
-                            <a href="ui-designs.html">VIEW DESIGNS - SOON</a>
+
+                        <div class="col-sm-6">
+                            <div class="text">
+                                <h1>02</h1>
+                                <h2>UI Designs</h2>
+                                <p>Some UI Designs of Mobile and Web Apps I've made</p>
+                                <a href="ui-designs.html">VIEW DESIGNS - SOON</a>
+                            </div>
                         </div>
+
+                    </div>
+
                 </div>
             </section>
+
             <section id="testimonials" class="testimonials">
                 <div class="testimonials-content">
                     <div id="myCarousel" class="carousel slide carousel-multi-item" data-ride="carousel">
@@ -124,32 +181,48 @@
                             <li data-target="#myCarousel" data-slide-to="1"></li>
                             <li data-target="#myCarousel" data-slide-to="2"></li>
                         </ol>
-                        
+
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
                             <div class="item active">
-                            <p>Piotr is a really to-the-point person. We worked together on few projects and he always fulfilled his tasks responsibly and on time. His designs are clean and nice to look at. Definitely a team player. During our work on this website he knew what he wanted and provided me with specific information and designs for the site. He also was listening to my suggestions and took them into consideration.</p>
-                            <img src="Images/33.png" />
-                            <h4>Michał Hawełka</h4>
-                            <h5>Web Developer</h5>
+                                <p>Piotr is a really to-the-point person. We worked together on few projects and he
+                                    always fulfilled his tasks responsibly and on time. His designs are clean and nice
+                                    to look at. Definitely a team player. During our work on this website he knew what
+                                    he wanted and provided me with specific information and designs for the site. He
+                                    also was listening to my suggestions and took them into consideration.</p>
+                                <img src="Images/33.png" />
+                                <h4>Michał Hawełka</h4>
+                                <h5>Web Developer</h5>
                             </div>
-                        
+
                             <div class="item">
-                            <p>The best person in the world!</p>
-                            <img src="Images/11.png" />
-                            <h4>Anna Bilik</h4>
-                            <h5>Mom</h5>
+                                <p>The best person in the world!</p>
+                                <img src="Images/11.png" />
+                                <h4>Anna Bilik</h4>
+                                <h5>Mom</h5>
                             </div>
-                        
+
                             <div class="item">
-                            <p>Piotr Bilik has been working in our company since 2016. He immediately became known as a perfectly organized, punctual and conscientious person.
-                                Piotr's commitment allowed him to soon improve the graphic design of many components of our online store and visibility of our online store in social media. He is effective in action, concrete and factual, he is able to quickly and precisely assess the needs of a potential recipient. His creativity, organizational skills and ability to act efficiently in stressful situations have always been a guarantee of reliable work. Piotr's interpersonal skills have proven themselves in contacts with co-workers and clients. Many projects were created from scratch by Piotr together with the right colour strategy and met with the friendly reception of the shop's customers. Attention to detail, excellent workmanship and punctuality are just some of the many positive aspects of our cooperation.</p>
-                            <img src="Images/22.png" />
-                            <h4>Dr. Magdalena Majewska</h4>
-                            <h5>Urban Vegan Owner</h5>
+                                <p>
+                                    Piotr Bilik has been working in our company since 2016. He immediately became known
+                                    as a perfectly organized, punctual and conscientious person.
+                                    Piotr's commitment allowed him to soon improve the graphic design of many components
+                                    of our online store and visibility of our online store in social media. He is
+                                    effective in action, concrete and factual, he is able to quickly and precisely
+                                    assess the needs of a potential recipient. His creativity, organizational skills and
+                                    ability to act efficiently in stressful situations have always been a guarantee of
+                                    reliable work. Piotr's interpersonal skills have proven themselves in contacts with
+                                    co-workers and clients. Many projects were created from scratch by Piotr together
+                                    with the right colour strategy and met with the friendly reception of the shop's
+                                    customers. Attention to detail, excellent workmanship and punctuality are just some
+                                    of the many positive aspects of our cooperation.
+                                </p>
+                                <img src="Images/22.png" />
+                                <h4>Dr. Magdalena Majewska</h4>
+                                <h5>Urban Vegan Owner</h5>
                             </div>
                         </div>
-                        
+
                         <!-- Left and right controls -->
                         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                             <span class="glyphicon glyphicon-chevron-left"></span>
@@ -164,28 +237,49 @@
             </section>
 
         </div>
-        <div class="footer">
-            <footer id="contact">
-                <div class="hero-summary">
-                    <h1>Piotr Bilik</h1>
-                    <p>
-                    A self taught designer that is looking for opportunity for further develop. I love learning new stuff and using my knowledge for a good cause. Team player, goal-oriented and fun guy who want's to join your team!
-                    </p>
+
+        <footer id="contact">
+            <div id="footer-wrap">
+                <div class="row">
+
+                    <div class="col-sm-6">
+                        <div class="hero-summary">
+                            <h1>Piotr Bilik</h1>
+                            <p>
+                                A self taught designer that is looking for opportunity for further develop. I love
+                                learning new
+                                stuff and using my knowledge for a good cause. Team player, goal-oriented and fun guy
+                                who want's
+                                to join your team!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="contact">
+                            <h1>Contact Me</h1>
+                            <p><a href="tel:+48508346718">+48 508 346 718</a></p>
+                            <p><a href="mailto:piotr.k.bilik@gmail.com">piotr.k.bilik@gmail.com</a></p>
+                            <p>
+                                CV:
+                                <a href="Files/Piotr Bilik English.pdf" target="_blank" rel="noopener">English</a>
+                                /
+                                <a href="Files/Piotr Bilik Polish.pdf" target="_blank" rel="noopener">Polish</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="footer-image text-right">
+                            <img src="Images/footer-img.png" />
+                        </div>
+                    </div>
+
                 </div>
-                <div class="contact">
-                    <h1>Contact Me</h1>
-                    <p><a href="tel:+48508346718">+48 508 346 718</a></p>
-                    <p><a href="mailto:piotr.k.bilik@gmail.com">piotr.k.bilik@gmail.com</a></p>
-                    <p>CV: <a href="Files/Piotr Bilik English.pdf" target="_blank" rel="noopener">English</a> / <a href="Files/Piotr Bilik Polish.pdf" target="_blank" rel="noopener">Polish</a></p>
-                </div>
-                <div class="footer-image">
-                    <img src="Images/footer-img.png" />
-                </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </div>
 
 </body>
-
 
 </html>
