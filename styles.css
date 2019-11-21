@@ -292,7 +292,6 @@ a {
 
 .testimonials .carousel-inner {
     font-size: 0.6em;
-    height: 80vh;
 }
 
 .testimonials .carousel-inner .item {
@@ -355,7 +354,6 @@ footer h1 {
     padding-right: 20%;
     padding-top: 2%;
     padding-bottom: 5%;
-    height: 26em;
 }
 
 #cycler {
@@ -390,7 +388,6 @@ footer h1 {
     }
     .testimonials .carousel-inner {
         font-size: 0.7em;
-        height: 60vh;
     }
 }
 
@@ -412,7 +409,6 @@ footer h1 {
     }
     .testimonials .carousel-inner {
         font-size: 0.75em;
-        height: auto;
     }
     .testimonials .carousel-inner .item {
         padding-left: 20%;

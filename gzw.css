@@ -88,6 +88,8 @@
 }
 
 .summary-btn {
+    display: block;
+    text-align: center;
     border: 2px solid white;
     border-radius: 21px;
     font-weight: 700;
@@ -166,6 +168,20 @@
     background: black;
     color: white;
     text-decoration: none;
+}
+
+#demo-btn {
+    display: block;
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .summary-btn {
+        display: inline;
+    }
+    #demo-btn {
+        display: inline;
+    }
 }
 
 @media (min-width: 768px) {

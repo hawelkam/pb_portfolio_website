@@ -8,4 +8,24 @@ $(document).ready(function () {
             $next.css('z-index', 3).addClass('active');
         });
     });
+
+    function alignTestimonials() {
+        var max = 0;
+
+        $('#testimonials .item').each(function (index) {
+            var height = $(this).outerHeight();
+
+            if (max < height) {
+                max = height;
+            }
+
+            if (index + 1 === $('#testimonials .item').length) {
+                $('#testimonials .carousel-inner').css('height', max + 'px');
+            }
+        });
+    }
+
+    alignTestimonials();
+
+    $(window).resize(alignTestimonials);
 });
